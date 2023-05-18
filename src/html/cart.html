@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  @@include('parts/head.html')
+  <title>Корзина</title>
+  <link media="all" rel=" stylesheet" type="text/css" href="cart.css" />
+</head>
+
+<body>
+  @@include('parts/icons.html')
+  @@include('parts/backdrops.html')
+  @@include('parts/support.html')
+  @@include('parts/header.html')
+  @@include('parts/menu.html')
+  <div class="main">
+    <div class="cart__container container">
+
+
+      <div class="basket-content">
+        <h1>Корзина</h1>
+        <div>
+          <h3>Доставка MARKETPLACE</h3><br>
+          <input id="basket-content__main-checkbox" class="basket-content__main-checkbox checkbox" type="checkbox">
+          <label for="basket-content__main-checkbox">Выбрать все</label>
+        </div>
+
+        <div class="basket-content__elements">
+
+          <input id="basket-content__fst-checkbox" class="checkbox" type="checkbox">
+          <label for="basket-content__fst-checkbox"></label>
+          <img src="../img/products/korzina.png" alt="">
+
+
+          <div class="basket-content__text">
+            <a class="clamp" href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corporis porro
+              culpa sit
+              asperiores fugiat
+              harum corrupti praesentium, reprehenderit unde consequuntur tempora animi minus a facilis id quis expedita
+              mollitia!
+            </a>
+            <p href="#">Lorem ipsum dolor sit amet.</p>
+          </div>
+
+
+          @@include('parts/counter/plus-minus.html')
+
+
+          <div class="price">
+
+            <p class="price__basic">1267</p>
+            <p class="price__discount">1980</p>
+
+          </div>
+
+
+          <div class="basket-content__delete-follow">
+            <svg class="">
+              <use xlink:href="#heart"></use>
+            </svg>
+            <svg class="">
+              <use xlink:href="#delete"></use>
+            </svg>
+          </div>
+
+        </div>
+
+        <div class="basket-content__elements">
+          <input id="basket-content__snd-checkbox" class="checkbox" type="checkbox">
+          <label for="basket-content__snd-checkbox"></label>
+
+          <img src="../img/products/korzina2.png" alt="">
+
+
+          <div class="basket-content__text">
+            <a class="clamp" href="">Подарочный набор Яндекс.Маркет Grazie</a>
+            <p>Продавец: Яндекс.Маркет</p>
+          </div>
+
+
+          @@include('parts/counter/plus-minus.html')
+
+
+          <div class="price">
+            <p class="price__basic">1190</p>
+            <p class="price__discount">1626</p>
+          </div>
+
+
+          <div class="basket-content__delete-follow">
+            <svg class="">
+              <use xlink:href="#heart"></use>
+            </svg>
+            <svg class="">
+              <use xlink:href="#delete"></use>
+            </svg>
+          </div>
+
+        </div>
+      </div>
+      <div class="basket-price">
+
+
+        <div class="basket-price__total basket-price__price">
+          <h3>Итого</h3>
+          <h3></h3>
+        </div>
+        <p></p>
+        <div class="basket-price__discount basket-price__price">
+          <p>Скидки: </p>
+          <p></p>
+        </div>
+        <div class="promo-code">
+          <input class="promo-code__input" type="text" placeholder="Промокод" />
+          <div class="promo-code__accept">Применить</div>
+        </div>
+        <a href="" class="basket-price__sign blue-button">Перейти к оформлению</a>
+
+        <div class="basket-price__terms">
+          <svg class="">
+            <use xlink:href="#checkmark"></use>
+          </svg>
+
+          <div class="basket-price__description">
+            <span>Согласен с условиями </span><a href="">Правил пользования торговой площадкой </a>
+            <span>и</span><a href=""> правилами возврата</a>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="basket-delivery">
+        <h1>Способ доставки</h1>
+        <button>+ Выбрать адрес доставки</button>
+      </div>
+
+      <div class="basket-payment">
+        <h1>Способ оплаты</h1>
+        <button>+ Выбрать способ оплаты</button>
+      </div>
+
+      <div class="basket-personal-info">
+        <h1>Ваши данные</h1>
+
+        <div class="basket-personal-info__name">
+          <label for="name">Имя</label>
+          <input id="name" type="text">
+        </div>
+        <div class="basket-personal-info__surname">
+          <label for="secondname">Фамилия</label>
+          <input id="secondname" type="text">
+        </div>
+
+        <div class="basket-personal-info__mobile">
+          <label for="phone">Контактный телефон</label>
+          <input id="phone" type="tel">
+        </div>
+
+        <div class="basket-personal-info__email">
+          <label for="email">Электронная почта</label>
+          <input id="email" type="email">
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+    @@include('parts/footer.html')
+</body>
+
+</html>

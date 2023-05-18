@@ -1,0 +1,73 @@
+<!-- Шапка -->
+<header class="header">
+    <div class="header__container container">
+        <a href="index.html" class="header__logo" title="На главную">
+            <img src="img/icons/favicon.svg" class="header__icon" />
+            <p>MARKETPLACE</p>
+        </a>
+
+
+        <!-- Кнопка открытия каталога -->
+        <button class="header__options blue-button">
+            <span></span>
+            <span></span>
+            <span></span>
+            <p>Каталог</p>
+        </button>
+
+
+        <!-- Строка поиска -->
+        <div class="finder">
+            <input type="text" placeholder="Я ищу..."></input>
+
+            <svg class="finder__find-icon">
+                <use xlink:href="#find"></use>
+            </svg>
+
+            <svg class="finder__cross-icon">
+                <use xlink:href="#cross"></use>
+            </svg>
+        </div>
+
+
+        <!-- Элементы заголовка -->
+        <div class="header__heading-elements">
+            <a href="cart.html">
+                <svg class="">
+                    <use xlink:href="#cart"></use>
+                </svg>
+
+                <p>Корзина</p>
+                <div class="header__product-count">
+                    <p>2</p>
+                </div>
+            </a>
+
+            <a href="followed.html">
+                <svg class="">
+                    <use xlink:href="#heart"></use>
+                </svg>
+                <p>Избранное</p>
+            </a>
+
+            <a href="gps.html">
+                <svg class="">
+                    <use xlink:href="#gps"></use>
+                </svg>
+
+                <p>Адрес выдачи</p>
+            </a>
+        </div>
+
+
+        <!-- Кнопка войти -->
+        <a class="header__sign blue-button" href="login.html">Войти</a>
+
+        <!--Адаптивный файндер-->
+
+        <svg class="header__finder-adaptive-button">
+            <use xlink:href="#find"></use>
+        </svg>
+
+    </div>
+</header>

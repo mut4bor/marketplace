@@ -1,0 +1,69 @@
+$bg-color: #43527a;
+$button-bg-color: #54679a;
+$finder-icon-color: rgba(255, 255, 255, 0.7);
+$finder-icon-active-color: rgba(0, 0, 0, 0.2);
+$gray-color: #e9e9e9;
+
+$header_height__def: 80px;
+$header_height__1200: 130px;
+$header_height__1024: 50px;
+$top_menu_animation: 30px;
+
+@import "nullStyle";
+@import "fonts";
+@import "header";
+@import "menu";
+@import "footer";
+@import "backdrop";
+@import "support";
+@import "checkbox";
+@import "scrollbar";
+@import "counter";
+
+body {
+    font-family: GothamPro;
+    background-color: #f8f8f8;
+    a {
+        text-decoration: none;
+        color: #333;
+    }
+}
+.blue-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background-color: $button-bg-color;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+    user-select: none;
+    transition: 0.2s;
+    padding: 0;
+    overflow: hidden;
+
+    &:hover {
+        background: #516394;
+    }
+
+    &:active {
+        background: #4a5b8a;
+    }
+
+    &.header__options {
+        @media (max-width: 1024px) {
+            background-color: transparent;
+        }
+    }
+}
+
+.container {
+    max-width: 1530px;
+    border: 0;
+    box-sizing: border-box;
+    padding: 0 22px;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+}

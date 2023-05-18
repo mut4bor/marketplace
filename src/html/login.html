@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    @@include('parts/head.html')
+    <title>Авторизация</title>
+    <link media="all" rel=" stylesheet" type="text/css" href="login.css" />
+</head>
+
+<body>
+    @@include('parts/icons.html')
+    <div class="page">
+        <div class="sign-window">
+
+            <a class="sign-window__main-page-arrow-link" href="index.html" title="На главную">
+                <svg class="">
+                    <use xlink:href="#arrow"></use>
+                </svg>
+
+            </a>
+
+            <a class="sign-window__main-page-logo-link" href="index.html" title="На главную">
+                <img src="img/icons/favicon.svg">
+            </a>
+
+            <h3>Войдите</h3>
+            <div class="sign-window__input">
+                <p>Логин</p>
+                <input type="text" placeholder="Телефон или почта">
+                <a href="" class="sign-window__forget-password">Не помню</a>
+            </div>
+
+            <a class="sign-window__sign-in blue-button" href="">Войти</a>
+            <a class="sign-window__register" href="">Зарегистрироваться</a>
+
+        </div>
+    </div>
+</body>
+
+</html>
